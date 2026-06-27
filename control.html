@@ -1,38 +1,33 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Управление таймером</title>
 
-<title>Панель управления</title>
+<style>
+body{
+    background:#111;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:Arial;
+}
 
-<link rel="stylesheet" href="style.css">
+button{
+    font-size:40px;
+    padding:25px 60px;
+    cursor:pointer;
+}
+</style>
 
 </head>
-
 <body>
 
-<div class="panel">
+<button onclick="addMinute()">+1 минута</button>
 
-<h1>Таймер</h1>
-
-<button id="plus1">+1 минута</button>
-
-<button id="plus5">+5 минут</button>
-
-<button id="minus1">-1 минута</button>
-
-<button id="start">▶ Старт</button>
-
-<button id="pause">⏸ Пауза</button>
-
-<button id="reset">🔄 Сброс</button>
-
-</div>
-
-<script type="module" src="firebase.js"></script>
-<script type="module" src="app.js"></script>
+<script type="module" src="control.js"></script>
 
 </body>
 </html>
