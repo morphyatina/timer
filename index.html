@@ -31,35 +31,7 @@ text-shadow:0 0 20px black;
 
 <div id="timer">00:00</div>
 
-<script>
-
-let seconds=0;
-
-function draw(){
-
-let m=Math.floor(seconds/60);
-let s=seconds%60;
-
-document.getElementById("timer").innerHTML=
-String(m).padStart(2,"0")+":"+String(s).padStart(2,"0");
-
-}
-
-setInterval(()=>{
-
-if(seconds>0){
-
-seconds--;
-
-draw();
-
-}
-
-},1000);
-
-draw();
-
-</script>
+<script type="module" src="app.js"></script>
 
 </body>
 </html>
